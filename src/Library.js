@@ -1,5 +1,12 @@
 function createLibrary(library) {
-
+  return {
+    name: library,
+    shelves: {
+      fantasy: [],
+      fiction: [],
+      nonFiction: [],
+    }
+  };
 };
 
 
