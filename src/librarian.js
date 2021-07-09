@@ -11,6 +11,10 @@ class Librarian {
       return `Hello, ${name}!`;
     }
   };
+
+  findBook(title) {
+    return `Yes, we have ${title}`
+  };
   
 };
 module.exports = Librarian;
