@@ -20,9 +20,24 @@ function listTitles(shelf) {
   return titles.join(", ");
 };
 
+//should tell us if title is on shelf
+//function accepting 2 params (shelf,title)
+function searchShelf(shelf, title) {
+  //creat a loop to iterate over shelf array lenghth
+  for (var i = 0; i < shelf.length; i++) {
+    //if array includes title
+    if(shelf[i].title === title) {
+      //return true
+      return true;
+    }
+  } 
+  //why does return false work
+  return false;
+};
+
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf,
 };
