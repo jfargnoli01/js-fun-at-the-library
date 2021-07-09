@@ -1,7 +1,12 @@
+function createLibrary(library) {
+
+};
+
+
 
 
 module.exports = {
-  // createLibrary,
+  createLibrary,
   // addBook,
   // checkoutBook
 };
