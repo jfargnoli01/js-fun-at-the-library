@@ -9,11 +9,12 @@ function createLibrary(library) {
   };
 };
 
-
-
+function addBook(library, book) {
+  library.shelves[book.genre].push(book);
+};
 
 module.exports = {
   createLibrary,
-  // addBook,
+  addBook,
   // checkoutBook
 };
