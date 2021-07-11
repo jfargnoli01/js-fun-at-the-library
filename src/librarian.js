@@ -22,7 +22,8 @@ class Librarian {
     return `Sorry, we do not have ${title}`;
   };
 
-  
-
+  calculateLateFee(daysLate) {
+    return Math.ceil(daysLate * .25);
+  };
 };
 module.exports = Librarian;
